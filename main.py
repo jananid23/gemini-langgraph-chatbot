@@ -33,9 +33,9 @@ if os.path.exists(log_file_path):
             if isinstance(data, list):
                 conversation_log = data
             else:
-                print("⚠️ log.json is not a list. Overwriting with a new list.")
+                print("log.json is not a list. Overwriting with a new list.")
         except json.JSONDecodeError:
-            print("⚠️ log.json is corrupted. Starting fresh.")
+            print(" log.json is corrupted. Starting fresh.")
 
 # Memory of full chat messages
 chat_memory = []
